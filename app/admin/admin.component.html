@@ -1,0 +1,24 @@
+
+    <div class="container-fluid col-4" >
+        <h1 style="color: blueviolet">LOGIN HERE</h1>
+        <form class="form-control" #adminform="ngForm" >
+            
+            <label>Create event</label>
+            <br/>   
+            
+                <input type="text"  placeholder="eventname" name="eventname" [(ngModel)]=eventname>
+                
+                <br/>
+                <label>Select Date</label>
+                <br/>
+                <input type="date" placeholder="SelectDate" name="date"  [(ngModel)]=date >
+               
+                <br/>
+                <button type="submit" (click)="postServer()"> submit</button>
+            
+        
+    </form>
+    
+    
+        </div>
+    
